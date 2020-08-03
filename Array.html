@@ -1,0 +1,248 @@
+<p class="Syntax">
+                    <span>
+                   <span>var</span> 
+                    <span>array_name</span> 
+                   <span>=</span> 
+                    <span>[item1, item2, ...];</span>
+                    </span>
+                </p>
+                <p>Example</p>
+                <p class="Exp">
+                    <span class="attribute">
+                   <span>var</span> 
+                  <span>streetName</span> 
+                  <span>=</span> 
+                   <span>["Argonne St.", "Bunyard", "Lisbon"];</span>
+                   </span>
+                </p>
+                <p>Array elements are numbered, starting with zero.</p>
+                  <p> We can get an element by its number in square brackets:</p>
+                  <p class="Pills">
+                    <span class="attribute">  
+                    <span>var</span>
+                    <span>streetName</span> 
+                    <span>=</span> 
+                    <span>["Argonne St", "Bunyard", "Lisbon"];</span>
+                   <span>alert</span>
+                   <span>( streetName[0] );</span>
+                    <span>//New York</span>
+                   <span>alert</span>
+                   <span>( streetName[1] );</span> 
+                   <span>// Boston</span>
+                   <span>alert</span>
+                   <span>( streetName[2] );</span> 
+                   <span>// Lisbon</span>
+                   </span>
+                  </p>
+                  <p>We can replace an element:</p>
+                  <p class="rep">
+                     <span class="attribute">streetName[2] = "Berlin"; //now["Argonne St", "Bunyard", "Berlin"]</span>
+                  </p>
+                  <p>Or add a new one to the array</p>
+                  <p class="rep">
+                   <span class="attribute">streetName[3] = "Lagos"; //now["Argonne St", "Bunyard", "Berlin", "Lagos"]</span>
+                  </p>
+                  <p>The total count of the elements in the array is its length:</p>
+                  <p class="length">
+                      <span class="attribute">
+                    <span>var</span>
+                       <span>fruits</span>
+                         <span>=</span> 
+                         <span>["Apple", "Orange", "Plum"];</span>
+
+                   <span>alert</span>
+                   <span>( fruits.length );</span> 
+                   <span>// 3</span>
+                   </span>
+                </p>
+                  <p>Accessing the Last Array Element</p>  
+                  <p class="length">
+                      <span class="attribute">
+                     <span>fruits</span> 
+                     <span>=</span> 
+                     <span>["Banana", "Orange", "Apple", "Mango"];</span>
+                      </span>
+                      <span class="attribute">
+                   <span>var</span>
+                    <span>last</span> 
+                    <span>=</span> 
+                    <span>fruits</span>
+                    <span>[fruits.length - 1];</span>
+                    </span>
+                    </p>
+                    <p class="Loops">Loops</p>
+                    <p>The safest way to loop through an array, is using a for loop:</p>
+                    <p class="Bold">Example</p>
+                    <p class="Loops style">
+                        <span class="attribute">
+                       <span>var</span>
+                        <span>arr</span>
+                        <span>=</span>
+                        <span>["Apple", "Orange", "Pear"];</span>
+                       <span>for</span> 
+                       <span>(</span>
+                       <span>let</span>
+                        <span>i = 0; i &lt;</span> 
+                        <span>arr</span>
+                        <span>.length; i++)</span> 
+                        <span>{</span>
+                         <span>alert</span>
+                         <span>( arr[i] );</span>
+                         </span>
+                        </p>
+                    <p>
+                        You can also use the Array.forEach() function:
+                    </p>     
+                    <p>Example</p>
+                    <span class="attribute">
+                        <span>var</span>
+                        <span>items</span>
+                        <span>=</span>
+                        <span>[</span>
+                        <span>"plates", "spoons", "jugs"</span>
+                        <span>]</span>
+                        <span>var</span>
+                        <span>newSet</span>
+                        <span>=</span>
+                        <span>[]</span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span>items.</span>
+                        <span>forEach</span>
+                        <span>(</span>
+                        <span>function</span>
+                        <span>(item)</span>
+                        <span>{</span>
+                        <span>newSet.</span>
+                        <span>push</span>
+                        <span>(item)</span>
+                        <span>});</span>
+                    </span>
+                    <h3>
+                      <a href="array.html">Array Methods</a>
+                    </h3>
+                    <p>
+                        Here, we are going to show you few examples on array methods
+                    </p>
+                    <p>
+                    <span>pop()</span>
+                    </p>
+                    <p>
+                        So we are going to start with arr.pop()
+                    </p>
+                    <p>
+                        pop() &dash; It removes and returns the last element of an array.
+                    </p>
+                    <p>
+                        Here are some examples of arr.pop
+                    </p>
+                    <p>
+                        <span class="attribute">
+                       <span>var</span>
+                       <span>clothes</span>
+                        <span>=</span> 
+                        <span>["pyjamas", "dungarees", "jumsuit"];</span>
+                       <span>alert</span> 
+                       <span>(clothes.pop(2));</span> 
+                       <span>// jumsuit</span>
+                       <span>alert</span>
+                       <span>(clothes);</span> 
+                       <span>// pyjamas, dungarees</span>
+                    </p>
+                    <p>
+                        <span class="attribute">
+                       <span>var</span>
+                       <span>clothes</span>
+                        <span>=</span> 
+                        <span>["pyjamas", "dungarees", "jumsuit"];</span>
+                       <span>alert</span> 
+                       <span>(clothes.pop(0));</span> 
+                       <span>// pyjamas</span>
+                       <span>alert</span>
+                       <span>(clothes);</span> 
+                       <span>// jumsuit, dungarees</span>
+                    </p>
+                    <p>
+                        <span>push()</span>
+                    </p>
+                    <p>
+                        It adds one or more elements to the end of an array.
+                    </p>
+                    <p>
+                        <span class="attribute">
+                       <span>var</span>
+                       <span>clothes</span>
+                        <span>=</span> 
+                        <span>["pyjamas", "dungarees", "jumsuit"];</span>
+                       <span>alert</span> 
+                       <span>(clothes.push("polo"));</span> 
+                       <span>// length is 4</span>
+                       <span>alert</span>
+                       <span>(clothes);</span> 
+                       <span>// jumsuit, dungarees, pyjamas, polo</span>
+                    </p>
+                    <p>
+                        <span>shift()</span>
+                    </p>
+                    <p>
+                        This method removes the first element in an array.
+                    </p>
+                    <p>
+                        <span class="attribute">
+                       <span>var</span>
+                       <span>cars</span>
+                        <span>=</span> 
+                        <span>["hyundai", "ford", "toyota"];</span>
+                       <span>alert</span> 
+                       <span>(clothes.shift());</span> 
+                       <span>// hyundai</span>
+                       <span>alert</span>
+                       <span>(clothes);</span> 
+                       <span>// ford, toyota</span>
+                    </p>
+                    <p>
+                        <span>unshift()</span>
+                    </p>
+                    <p>
+                        It adds one or more elements in the beginning of the given array.
+                    </p>
+                    <p>
+                        <span class="attribute">
+                            <span>var</span>
+                            <span>fruits</span>
+                            <span>=</span>
+                            <span>[</span>
+                            <span>"oranges", "Apple"</span>
+                            <span>];</span>
+                            <span>fruits.unshift</span>
+                            <span>(</span>
+                            <span>"Pear"</span>
+                            <span>)</span>
+                            <span>alert (fruits);</span>
+                        </span>
+                    </p>
+                    <p>
+                        Let's combine what we have learnt so far.
+                    </p>
+                    <p>
+                        <span>pop</span>
+                        <span>push</span>
+                        <span>shift</span>
+                        <span>unshift</span>
+                    </p>
+                    <p>
+                        <span class="attribute">
+                            <span>var</span>
+                            <span>sets</span>
+                            <span>=</span>
+                            <span>[</span>
+                            <span>"oranges", "Apple","hyundai", "ford", "toyota","pyjamas", "dungarees", "jumsuit"</span>
+                            <span>];</span>
+                            <span>sets.pop(2)</span>
+                            <span>sets.push("pear")</span>
+                            <span>sets.unshift("ferrari")</span>
+                            <span>sets.shift()</span>
+                            <span>alert (sets);</span>
+                        </span>
+                    </p>
