@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-size-adjust: none;
+    margin: 0;
+    font: 20px/20px  'PT Sans', sans-serif;
+    color: #333;
+    line-height: 20px;
+    font-weight: normal;
+    background-color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+    background-color: lightslategray;
+}
+h2{
+    color: whitesmoke;
+}
+h1 {
+   display: block;
+   margin-block-start: 0.67em;
+   margin-block-end: 0.67em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-size: 50px;
+   font-weight: bold; 
+}
+h1, h2, h3 {
+    line-height: 1.3em;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.nav-links li {
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+@media (min-width: 1220px){
+    .sub {
+        line-height: 22px;
+    }
+    .page-main {
+        padding: 0 120px;
+        width: 800px;
+        margin-right: 154.5px;
+        margin-left: 154.4px;
+    }
+   
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 8vh;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        box-sizing: border-box;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    p {
+       line-height: 1.5;
+       padding: 15px;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+
+@media  (width: 483px){
+    article{
+        padding: 0;
+        line-height: 1.4;
+    }
+}
