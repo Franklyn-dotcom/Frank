@@ -1,0 +1,28 @@
+ .scrollTop{
+          border-radius: 60%;
+          width: 40px;
+          height: 40px;
+          background-color: rgb(3, 53, 53);
+          position: fixed;
+          right: 30px;
+          bottom: 20px;
+          z-index: 99;
+          display: none;
+          padding: 15px;
+          color: white;
+      }
+      .scrollTop:hover{
+          background-color: deepskyblue;
+          transition: 1s;
+      }
+      span{
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          cursor: pointer;
+      }
+      html{
+          scroll-behavior: smooth;
+      }
